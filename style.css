@@ -1,0 +1,46 @@
+html{
+    height: 200vh;
+}
+
+.nav{
+    padding-top: 30px;
+    position: fixed;
+    width: 100%;
+}
+
+.nav-item{
+    background-color: rgb(124, 194, 124);
+    text-align: center;
+}
+
+.nav-item:hover{
+    background-color: rgb(92, 141, 92);
+}
+
+.nav-link {
+    color: white;
+    padding: 20px 50px;
+
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-pc{
+    display: block;
+}
+
+.nav-phone{
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-pc{
+        display: none;
+    }
+
+    .nav-phone{
+        display: block;
+    }
+  }
