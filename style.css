@@ -1,3 +1,7 @@
+:root{
+    --nav-text: black;
+}
+
 html{
     height: 200vh;
     width: 100%;
@@ -15,9 +19,10 @@ header{
 
 header h3{
     margin: 0px;
+    text-decoration: bo;
 }
 
-.main-content{
+.centerizer9000{
     margin: 0% 15%;
 }
 
@@ -26,14 +31,26 @@ header h3{
 }
 
 .menu a{
-    padding: 5px;
+    padding: 5px 5px;
 }
+
+.main-content {
+    padding-top: 100px;
+}
+
+.center {
+    text-align: center;
+    margin: 30px 0px;
+}
+
 
 ul a {
 	display: block;
 	position: relative;
     overflow: hidden;
     font-size: 0.9em;
+    text-decoration: none;
+    color: var(--nav-text);
 }
 
 /* Fade in */
@@ -44,7 +61,7 @@ ul a::after {
 	left: 0;
 	width: 100%;
 	height: 0.1em;
-	background-color: hotpink;
+	background-color: rgb(92, 141, 92);
 	opacity: 0;
 	transition: opacity 300ms, transform 300ms;
 }
@@ -66,6 +83,8 @@ li a:focus::after{
 
 ul a:hover{
     cursor: pointer !important;
+    text-decoration: none;
+    color: var(--nav-text);
 }
 
 body{
@@ -90,5 +109,21 @@ body{
     .menu {
         vertical-align: middle;
         text-align: center;
+    }
+
+    .menu a{
+        padding:  0 9px;
+    }
+
+    .center {
+        float: left;
+        margin: 0px;
+        margin-right: 35px;
+    }
+    
+    .blurb {
+        display: table-cell;
+        vertical-align: middle;
+        height: 187px;
     }
 }
