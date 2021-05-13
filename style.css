@@ -2,15 +2,15 @@ html{
     height: 200vh;
 }
 
-.nav{
-    padding-top: 30px;
-    position: fixed;
-    width: 100%;
+body{
+    font-family: 'Rubik';
 }
 
 .nav-item{
     background-color: rgb(124, 194, 124);
     text-align: center;
+    width: 25%;
+    font-size: 17px;
 }
 
 .nav-item:hover{
@@ -19,28 +19,32 @@ html{
 
 .nav-link {
     color: white;
-    padding: 20px 50px;
-
+    padding: 20px 10px;
 }
 
 .nav-link:hover {
     color: white;
 }
 
-.nav-pc{
-    display: block;
-}
-
-.nav-phone{
-    display: none;
-}
-
-@media only screen and (max-width: 850px) {
-    .nav-pc{
-        display: none;
-    }
-
-    .nav-phone{
-        display: block;
-    }
+@font-face {
+    font-family: 'Rubik', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
   }
+
+@media only screen and (min-width: 777px) {
+    .nav{
+        padding-top: 30px;
+        position: fixed;
+        width: 100%;
+    }
+    .nav-item {
+        width: 185px ;
+    }
+
+    .nav-link {
+        padding: 20px 20px;
+    }
+    .nav-item{
+        font-size: 20px;
+    }
+}
